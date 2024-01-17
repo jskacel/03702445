@@ -1,0 +1,9 @@
+---
+- name: Case 03702445 replication
+  hosts: localhost
+
+  tasks:
+    - name: Case 03702445 replication
+      ansible.builtin.get_url:
+        url: https://github.com/jskacel/03702445/raw/main/test-json.json
+        dest: /tmp/03702445-json.json
